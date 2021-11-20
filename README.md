@@ -1,5 +1,11 @@
 # dotfiles
-my setupl
+
+my setup
+```bash
+cd ~
+gh repo clone mix2zeta/dotfiles
+```
+
 
 ## editer
 - vscode: https://code.visualstudio.com/Download

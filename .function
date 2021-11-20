@@ -1,7 +1,7 @@
 # zipf : To create a ZIP archive of a folder
 
 function zipf() {
-	zip -r "$1".zip "$1" ;
+  zip -r "$1".zip "$1" ;
 }
 
 # extract : extract any file with this command.
@@ -25,16 +25,4 @@ extract () {
    else
        echo "'$1' is not a valid file"
    fi
-}
-
-# json : pretty print of a json
-
-function json() {
-  if [ -p /dev/stdin ]; then
-    # piping, e.g. `echo '{"foo":42}' | json`
-    python -mjson.tool | pygmentize -l javascript
-  else
-    # e.g. `json '{"foo":42}'`
-    python -mjson.tool <<< "$*" | pygmentize -l javascript
-  fi
 }

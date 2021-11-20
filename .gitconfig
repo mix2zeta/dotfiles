@@ -1,0 +1,31 @@
+[user]
+    email = mix2zeta@gmail.com
+    name = mix2zeta
+
+[alias]
+    co = checkout
+    cm = commit -m
+    s = status -s
+    st = status
+    log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[core]
+    excludesfile = ~/.gitignore
+
+[help]
+    # Automatically correct and execute mistyped commands
+    autocorrect = 1
+
+[push]
+    default = current
+    # Make `git push` push relevant annotated tags when pushing branches out.
+    followTags = true
+
+[pull]
+    rebase = true
+
+[commit]
+    gpgsign = true
+
+[tag]
+    gpgsign = true

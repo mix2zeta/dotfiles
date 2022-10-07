@@ -17,6 +17,8 @@ alias python="python3"
 alias deploy='ansible-playbook --private-key=~/.ssh/warroom-sg.pem -i'
 alias deploy-stg-wr-api='deploy hosts-staging/api-and-cbc.ini warroom-staging/api.yml -vv'
 alias deploy-stg-wr-cbc='deploy hosts-staging/api-and-cbc.ini warroom-staging/web.yml -vv'
+alias deploy-stg-wr-worker='deploy hosts-staging/node-worker.ini warroom-staging/worker.yml -vv'
+alias deploy-stg-wr-job-runner='deploy hosts-staging/node-worker.ini warroom-staging/job-runner.yml -vv'
 alias deploy-prod-wr-cbc='deploy hosts/productionWarroomValentineRelease_web.ini ./warroom-production/web.yml -vv'
 alias deploy-prod-wr-api='deploy hosts/productionWarroomValentineRelease_api.ini ./warroom-production/api.yml -vv'
 alias deploy-prod-wr-api-bg='deploy hosts/productionWarroomValentineRelease_worker-api.ini ./warroom-production/worker-api.yml -vv'

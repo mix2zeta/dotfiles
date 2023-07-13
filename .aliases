@@ -5,6 +5,7 @@ alias dcom='docker compose'
 alias dk='docker'
 alias ls='exa --group-directories-first'
 alias la='ls -a'
+alias lsa='ls -la'
 alias ll='ls --git -l'
 alias lt='ls --tree -D -L 2 -I ${TREE_IGNORE}'
 alias ltt='ls --tree -D -L 3 -I ${TREE_IGNORE}'
@@ -14,7 +15,7 @@ alias python="python3"
 
 # Warroom deployment
 
-alias deploy='ansible-playbook --private-key=~/.ssh/warroom-sg.pem -i'
+alias deploy='python -m ansible playbook --private-key=~/.ssh/warroom-sg.pem -i'
 alias deploy-stg-wr-api='deploy hosts-staging/api-and-cbc.ini warroom-staging/api.yml -vv'
 alias deploy-stg-wr-cbc='deploy hosts-staging/api-and-cbc.ini warroom-staging/web.yml -vv'
 alias deploy-stg-wr-worker='deploy hosts-staging/node-worker.ini warroom-staging/worker.yml -vv'
@@ -24,3 +25,4 @@ alias deploy-prod-wr-api='deploy hosts/productionWarroomValentineRelease_api.ini
 alias deploy-prod-wr-api-bg='deploy hosts/productionWarroomValentineRelease_worker-api.ini ./warroom-production/worker-api.yml -vv'
 alias deploy-prod-wr-worker='deploy hosts/productionWarroomValentineRelease_worker.ini ./warroom-production/worker.yml -vv'
 alias deploy-prod-wr-job-runner='deploy hosts/job-runner.ini ./warroom-production/job-runner.yml -vv'
+alias deploy-prod-wr-miniapp='deploy hosts/external.ini ./warroom-production/miniapp.yml'

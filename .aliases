@@ -22,6 +22,7 @@ alias deploy-stg-wr-worker='deploy hosts-staging/node-worker.ini warroom-staging
 alias deploy-stg-wr-job-runner='deploy hosts-staging/node-worker.ini warroom-staging/job-runner.yml -vv'
 alias deploy-stg-wr-miniapp='deploy hosts-staging/external.ini ./warroom-staging/miniapp.yml'
 alias deploy-prod-wr-cbc='deploy hosts/web.ini ./warroom-production/web.yml -vv'
+alias deploy-prod-wr-cbc-worker='deploy hosts/cbc-worker.ini ./warroom-production/cbc-worker.yml -vv'
 alias deploy-prod-wr-api='deploy hosts/api.ini ./warroom-production/api.yml -vv'
 alias deploy-prod-wr-api-bg='deploy hosts/worker-api.ini ./warroom-production/worker-api.yml -vv'
 alias deploy-prod-wr-worker='deploy hosts/worker.ini ./warroom-production/worker.yml -vv'

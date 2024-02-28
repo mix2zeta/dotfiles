@@ -27,6 +27,7 @@ alias deploy-prod-wr-api-bg='deploy hosts/worker-api.ini ./warroom-production/wo
 alias deploy-prod-wr-callback='deploy hosts/callback.ini warroom-production/callback.yml -vv'
 alias deploy-prod-wr-cbc='deploy hosts/web.ini ./warroom-production/web.yml -vv'
 alias deploy-prod-wr-cbc-worker='deploy hosts/cbc-worker.ini ./warroom-production/cbc-worker.yml -vv'
+alias deploy-prod-wr-cbc-scheduler='deploy hosts/scheduler.ini ./warroom-production/cbc-scheduler.yml -vv'
 alias deploy-prod-wr-job-runner='deploy hosts/job-runner.ini ./warroom-production/job-runner.yml -vv'
 alias deploy-prod-wr-miniapp='deploy hosts/external.ini ./warroom-production/miniapp.yml'
 alias deploy-prod-wr-worker='deploy hosts/worker.ini ./warroom-production/worker.yml -vv'

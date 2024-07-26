@@ -3,7 +3,7 @@
 alias rm='rm -I' # safety first
 alias dcom='docker compose'
 alias dk='docker'
-alias ls='exa --group-directories-first'
+alias ls='eza --group-directories-first'
 alias la='ls -a'
 alias lsa='ls -la'
 alias ll='ls --git -l'
@@ -12,6 +12,13 @@ alias ltt='ls --tree -D -L 3 -I ${TREE_IGNORE}'
 alias lttt='ls --tree -D -L 4 -I ${TREE_IGNORE}'
 alias ltttt='ls --tree -D -L 5 -I ${TREE_IGNORE}'
 alias python="python3"
+
+# AWS
+
+alias aws-legacy='aws-vault exec aws.legacy --'
+alias aws-stg='aws-vault exec aws.staging.warroom --'
+alias aws-prod='aws-vault exec aws.warroom --'
+alias aws-ssm-stg='~/.aws/ssm-stg.sh'
 
 # Warroom deployment
 
@@ -29,6 +36,7 @@ alias deploy-prod-wr-callback='deploy hosts/callback.ini warroom-production/call
 alias deploy-prod-wr-cbc='deploy hosts/web.ini ./warroom-production/web.yml'
 alias deploy-prod-wr-cbc-worker='deploy hosts/cbc-worker.ini ./warroom-production/cbc-worker.yml'
 alias deploy-prod-wr-cbc-scheduler='deploy hosts/scheduler.ini ./warroom-production/cbc-scheduler.yml'
+alias deploy-prod-wr-external='deploy hosts/external.ini ./warroom-production/external.yml'
 alias deploy-prod-wr-job-runner='deploy hosts/job-runner.ini ./warroom-production/job-runner.yml'
 alias deploy-prod-wr-miniapp='deploy hosts/external.ini ./warroom-production/miniapp.yml'
 alias deploy-prod-wr-worker='deploy hosts/worker.ini ./warroom-production/worker.yml'

@@ -12,6 +12,7 @@ alias ltt='ls --tree -D -L 3 -I ${TREE_IGNORE}'
 alias lttt='ls --tree -D -L 4 -I ${TREE_IGNORE}'
 alias ltttt='ls --tree -D -L 5 -I ${TREE_IGNORE}'
 alias python="python3"
+alias ai='claude'
 
 # AWS
 
